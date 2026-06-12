@@ -1,3 +1,9 @@
+import { SiteHeader } from './components/site-header';
+
 export default function App() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <SiteHeader />
+    </div>
+  );
 }
