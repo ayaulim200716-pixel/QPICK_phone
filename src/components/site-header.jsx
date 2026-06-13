@@ -1,5 +1,5 @@
 import PhoneIcon from '../assets/icons/phone-icon.svg?react';
-import HeartIcon from '../assets/icons/heart-icon.svg?react';
+import HeartHeaderIcon from '../assets/icons/heartHeader-icon.svg?react';
 import TrolleyIcon from '../assets/icons/trolley-icon.svg?react';
 import ShavronIcon from '../assets/icons/shavron-icon.svg?react';
 import styles from './site-header.module.scss';
@@ -22,7 +22,7 @@ export function SiteHeader() {
           </div>
 
           <div className={styles.wrapper}>
-            <HeartIcon />
+            <HeartHeaderIcon />
             <TrolleyIcon />
           </div>
         </nav>

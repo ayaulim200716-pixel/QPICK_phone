@@ -1,14 +1,15 @@
-import styles from './main-page.module.scss';
+import styles from './case-page.module.scss';
 import glassCaseImg from '../assets/images/glassCase-img.png';
 import yellowCaseImg from '../assets/images/yellowCase-img.png';
 import blackCaseImg from '../assets/images/blackCase-img.png';
+import { ProductsTitle } from '../components/products-title';
 
 export default function CasePage() {
   return (
     <>
       <section className={styles.cases}>
         <div className="container">
-          <p className={styles.headline}>Чехлы</p>
+          <ProductsTitle title="Чехлы" />
 
           <div className={styles.allPhones}>
             <div className={styles.phone}>
