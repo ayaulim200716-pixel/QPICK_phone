@@ -1,0 +1,96 @@
+.title {
+  padding: 29px 0 13px 15px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 18px;
+  margin: 13px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 630px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.about {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.price {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card2 {
+  height: 288px;
+  padding: 18px;
+  margin: 13px 0 106px 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+
+.deliveryAbout {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.truck {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card3 {
+  padding: 20px;
+  background-color: #fff;
+  width: 350px;
+  height: 115px;
+  border-radius: 30px;
+}
+
+.inAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  width: 350px;
+  height: 65px;
+  border-radius: 20px;
+  font-size: 17px;
+}

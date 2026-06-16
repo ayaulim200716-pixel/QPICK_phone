@@ -1,13 +1,14 @@
-import { SiteHeader } from './components/site-header';
+import { Route, Routes } from 'react-router';
 import MainPage from './pages/main-page';
-import { SiteFooter } from './components/site-footer';
+import FavoritesPage from './pages/fav-page';
+import BasketPage from './pages/basket-page';
 
 export default function App() {
   return (
-    <div>
-      <SiteHeader />
-      <MainPage />
-      <SiteFooter />
-    </div>
+    <Routes>
+      <Route index element={<MainPage />} />
+      <Route path="/favorites" element={<FavoritesPage />} />
+      <Route path="/basket" element={<BasketPage />} />
+    </Routes>
   );
 }

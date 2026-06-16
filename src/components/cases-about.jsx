@@ -1,4 +1,4 @@
-import styles from '../pages/case-page.module.scss';
+import styles from '../components/case-section.module.scss';
 
 export function CasesAbout(props) {
   const { img, desc } = props;

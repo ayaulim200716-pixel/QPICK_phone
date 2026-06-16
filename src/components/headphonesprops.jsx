@@ -1,6 +1,6 @@
 import HeartIcon from '../assets/icons/heart-icon.svg?react';
 import StarIcon from '../assets/icons/star-icon.svg?react';
-import styles from '../pages/headphones-wireless-page.module.scss';
+import styles from '../components/headphones-wireless-section.module.scss';
 
 export default function HeadphonesProps(props) {
   const { img, price, name, rating } = props;

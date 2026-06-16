@@ -1,9 +1,9 @@
-import styles from './case-page.module.scss';
-import { ProductsTitle } from '../components/products-title';
+import styles from './case-section.module.scss';
+import { ProductsTitle } from './products-title';
 import { CASES } from '../data';
-import { CasesAbout } from '../components/cases-about';
+import { CasesAbout } from './cases-about';
 
-export default function CasePage() {
+export default function CaseSection() {
   return (
     <>
       <section className={styles.cases}>

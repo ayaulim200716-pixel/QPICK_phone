@@ -71,15 +71,13 @@ export function SiteFooter() {
           </div>
 
           <div className={styles.navLinks}>
-            {footerLinks.map((link) => (
-              <ul className={styles.list}>
-                <li className={styles.item}>
-                  <a href={link.link} className={styles.link} key={link.id}>
-                    {link.name}
-                  </a>
+            <ul className={styles.list}>
+              {footerLinks.map((link) => (
+                <li key={link.id} className={styles.item}>
+                  <button className={styles.link}>{link.name}</button>
                 </li>
-              </ul>
-            ))}
+              ))}
+            </ul>
           </div>
 
           <div className={styles.service}>

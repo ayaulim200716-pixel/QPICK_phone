@@ -1,9 +1,9 @@
-import styles from './headphones-wireless-page.module.scss';
-import { ProductsTitle } from '../components/products-title';
+import styles from './headphones-wireless-section.module.scss';
+import { ProductsTitle } from './products-title';
 import { headphones } from '../data';
-import HeadphonesProps from '../components/headphonesprops';
+import HeadphonesProps from './headphonesprops';
 
-export default function HeadphonesPage() {
+export default function HeadphonesSection() {
   return (
     <>
       <section className={styles.headphones}>
