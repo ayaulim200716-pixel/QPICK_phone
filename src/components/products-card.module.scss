@@ -10,6 +10,7 @@
   width: 350px;
   border-radius: 30px;
   background-color: #fff;
+
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
@@ -56,4 +57,12 @@
   font-size: 17px;
   font-weight: 500;
   color: var(--text-color);
+}
+
+.active {
+  color: red;
+}
+
+.inactive {
+  color: #1c1c27;
 }

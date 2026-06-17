@@ -4,6 +4,7 @@ import VKIcon from '../assets/icons/VK-icon.svg?react';
 import InstaIcon from '../assets/icons/Instagram-icon.svg?react';
 import TelegaIcon from '../assets/icons/Telegram-icon.svg?react';
 import WhatsappIcon from '../assets/icons/Whatsapp-icon.svg?react';
+import { Link } from 'react-router';
 
 const footerLangs = [
   {
@@ -25,16 +26,19 @@ const footerLinks = [
     id: 1,
     link: '#',
     name: 'Избранное',
+    href: '/favorites',
   },
   {
     id: 2,
     link: '#',
     name: 'Корзина',
+    href: '/basket',
   },
   {
     id: 3,
     link: '#',
     name: 'Контакты',
+    href: '/contact',
   },
 ];
 
@@ -66,15 +70,17 @@ export function SiteFooter() {
     <footer>
       <div className="container">
         <nav className={styles.nav}>
-          <div className={styles.title}>
+          <Link className={styles.title} to={'/'}>
             <p>QPICK</p>
-          </div>
+          </Link>
 
           <div className={styles.navLinks}>
             <ul className={styles.list}>
               {footerLinks.map((link) => (
                 <li key={link.id} className={styles.item}>
-                  <button className={styles.link}>{link.name}</button>
+                  <Link to={link.href} className={styles.link}>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,13 +101,14 @@ export function SiteFooter() {
 
           <div className={styles.social}>
             {footerSocials.map((social) => (
-              <a
-                href={social.link}
+              <Link
+                to={social.link}
                 className={styles.socialBtn}
                 key={social.id}
+                target="_blank"
               >
                 <social.way />
-              </a>
+              </Link>
             ))}
           </div>
         </nav>

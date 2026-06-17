@@ -1,23 +1,19 @@
-import style from '../pages/fav-page.module.scss';
-import styles from '../components/headphones-wireless-section.module.scss';
-import { ProductsTitle } from '../components/products-title';
-import { headphones } from '../data';
-import HeadphonesProps from '../components/headphonesprops';
-import { wirelesses } from '../data';
-import { SiteFooter } from '../components/site-footer';
-import { SiteHeader } from '../components/site-header';
+import styles from './fav-page.module.scss';
+import { ProductsTitle } from '../../components/products-title';
+import { headphones } from '../../data';
+import ProductCard from '../../components/products-card';
+import { wirelesses2 } from '../../data';
 
 export default function FavoritesPage() {
   return (
     <div className="container">
-      <SiteHeader />
-      <h3 className={style.title}>Избранное</h3>
+      <h3 className={styles.title}>Избранное</h3>
       <section className={styles.headphones}>
         <div className="container">
           <ProductsTitle title="Наушники" />
           <div className={styles.wrapper}>
             {headphones.map((headphones) => (
-              <HeadphonesProps
+              <ProductCard
                 key={headphones.id}
                 img={headphones.img}
                 price={headphones.price}
@@ -34,13 +30,12 @@ export default function FavoritesPage() {
           <ProductsTitle title="Беспроводные наушники" />
 
           <div className={styles.wrapper}>
-            {wirelesses.map((wireless) => (
-              <HeadphonesProps {...wireless} key={wireless.id} />
+            {wirelesses2.map((wireless) => (
+              <ProductCard {...wireless} key={wireless.id} />
             ))}
           </div>
         </div>
       </section>
-      <SiteFooter />
     </div>
   );
 }

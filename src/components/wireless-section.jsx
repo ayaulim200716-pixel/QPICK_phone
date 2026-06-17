@@ -1,7 +1,7 @@
-import styles from './headphones-wireless-section.module.scss';
+import styles from './products-card.module.scss';
 import { ProductsTitle } from './products-title';
-import HeadphonesProps from './headphonesprops';
 import { wirelesses } from '../data';
+import ProductCard from './products-card';
 
 export default function WirelessSection() {
   return (
@@ -12,7 +12,7 @@ export default function WirelessSection() {
 
           <div className={styles.wrapper}>
             {wirelesses.map((wireless) => (
-              <HeadphonesProps
+              <ProductCard
                 key={wireless.id}
                 img={wireless.img}
                 price={wireless.price}

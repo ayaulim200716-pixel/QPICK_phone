@@ -1,14 +1,21 @@
 import HeartIcon from '../assets/icons/heart-icon.svg?react';
 import StarIcon from '../assets/icons/star-icon.svg?react';
-import styles from '../components/headphones-wireless-section.module.scss';
+import styles from '../components/products-card.module.scss';
+import { useState } from 'react';
+import clsx from 'clsx';
 
-export default function HeadphonesProps(props) {
+export default function ProductCard(props) {
+  const [isActive, setIsActive] = useState(false);
   const { img, price, name, rating } = props;
 
   return (
     <div className={styles.headAll}>
       <div className={styles.heart}>
-        <HeartIcon />
+        <button onClick={() => setIsActive(!isActive)}>
+          <HeartIcon
+            className={clsx(isActive ? styles.active : styles.inactive)}
+          />
+        </button>
       </div>
 
       <div className={styles.img}>

@@ -22,9 +22,10 @@
 }
 
 .img {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+  & > img {
+    width: 146px;
+    height: 136px;
+  }
 }
 
 .about {
@@ -72,7 +73,7 @@
 }
 
 .card3 {
-  padding: 20px;
+  padding: 18px;
   background-color: #fff;
   width: 350px;
   height: 115px;
@@ -89,7 +90,7 @@
 .btn {
   background-color: black;
   color: #fff;
-  width: 350px;
+  width: 100%;
   height: 65px;
   border-radius: 20px;
   font-size: 17px;

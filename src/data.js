@@ -73,3 +73,19 @@ export const wirelesses = [
     img: BOROFONEImg,
   },
 ];
+export const wirelesses2 = [
+  {
+    id: 1,
+    name: 'Apple AirPods',
+    price: '9527 ₸',
+    rating: 4.7,
+    img: AirpodsImg,
+  },
+  {
+    id: 2,
+    name: 'GERLAX GH-04',
+    price: '6527 ₸',
+    rating: 4.7,
+    img: GERLAXImg,
+  },
+];

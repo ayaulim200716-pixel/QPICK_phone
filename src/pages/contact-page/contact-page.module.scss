@@ -1,0 +1,49 @@
+.wrapper {
+  margin: 27px 60px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+
+.office {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 760px;
+  height: 554px;
+  padding: 15px 17px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.location {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.cab {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.socialsBtn {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 29px;
+  border-radius: 30px;
+}
+
+.contact {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  gap: 28px;
+}
